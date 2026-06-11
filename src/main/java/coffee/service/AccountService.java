@@ -36,7 +36,7 @@ public class AccountService {
         loadFromDisk();
     }
 
-    // ─── Public API ──────────────────────────────────────────────────────────
+    // Public API
 
     /**
      * Register a new account.
@@ -112,7 +112,7 @@ public class AccountService {
 
     public int accountCount() { return accounts.size(); }
 
-    // ─── Persistence — encrypted ─────────────────────────────────────────────
+    // Persistence — encrypted 
 
     private void loadFromDisk() {
         if (!Files.exists(dataFile)) return;
