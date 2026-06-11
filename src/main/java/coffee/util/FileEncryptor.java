@@ -71,7 +71,7 @@ public final class FileEncryptor {
         return new String(cipher.doFinal(ciphertext));
     }
 
-    // ─── Helpers ─────────────────────────────────────────────────────────────
+    // Helpers 
 
     private static SecretKey deriveKey(byte[] salt) throws GeneralSecurityException {
         PBEKeySpec spec = new PBEKeySpec(
